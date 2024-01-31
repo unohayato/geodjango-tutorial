@@ -11,6 +11,8 @@ COPY ./requirements.txt /code/
 # 必要なパッケージと依存関係をインストール
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
+        unzip \
+        wget \
         binutils \
         libproj-dev \
         gdal-bin \
